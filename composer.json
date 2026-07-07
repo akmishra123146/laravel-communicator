@@ -1,5 +1,5 @@
 {
-    "name": "communicator/laravel-communicator",
+    "name": "akmishra123146/laravel-communicator",
     "description": "A modular communication suite for Laravel handling OTP, Email, SMS, Push, WhatsApp, and more.",
     "type": "library",
     "license": "MIT",
