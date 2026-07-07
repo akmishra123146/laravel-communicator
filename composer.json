@@ -1,0 +1,40 @@
+{
+    "name": "communicator/laravel-communicator",
+    "description": "A modular communication suite for Laravel handling OTP, Email, SMS, Push, WhatsApp, and more.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laravel Developer",
+            "email": "developer@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/console": "^10.0|^11.0",
+        "laravel/prompts": "^0.1.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "Communicator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Communicator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Communicator\\CommunicatorServiceProvider"
+            ],
+            "aliases": {
+                "Communication": "Communicator\\Facades\\Communication"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
